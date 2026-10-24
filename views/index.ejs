@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <% if (typeof error !== undefined && error) { %>
+        <p style="color:red"> <%= error %> </p>
+    <% } %>
+    
+    <form method="POST" action="/shorten-form">
+        <label>Input your Url</label>
+        <input type="url" name="originalUrl" placeholder="e.g https://www.google.com">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
